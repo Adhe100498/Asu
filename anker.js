@@ -62,20 +62,20 @@ const { wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRando
 
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
-            + 'FN:DARK BOT\n'
+            + 'FN:DHEKONG BOT\n'
             + 'ORG:Owner Gans;\n'
-            + 'TEL;type=CELL;type=VOICE;waid=6281368646011:+62 813-6864-6011\n'
+            + 'TEL;type=CELL;type=VOICE;waid=6283138744326:+62 831-3874-4326\n'
             + 'END:VCARD'
 
 prefix = "#"
-name = "~ DARK BOT"
+name = "~ DHEKONG BOT"
 rdaftar = "HALLO KAK MAKASIH UDH DAFTAR YAA😁"
 rmenu = "HALLO KAK😊"
 botinfo = "MAU SEWA DONASI DLU YA KAK:)"
-limitt = 9999999999
-memberLimit = 2
-ban = ["6283806369677@s.whatsapp.net"]
-premium = ["6281368646011@s.whatsapp.net"]
+limitt = 500
+memberLimit = 50
+ban = ["@s.whatsapp.net"]
+premium = ["6282223049262@s.whatsapp.net"]
 
 function kyun(seconds){
   function pad(s){
@@ -201,7 +201,7 @@ async function starts() {
 			}
 
 			const botNumber = dms.user.jid
-			const ownerNumber = ["6281368646011@s.whatsapp.net"] // owner number ubah aja
+			const ownerNumber = ["6283138744326@s.whatsapp.net"] // owner number ubah aja
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await dms.groupMetadata(from) : ''
